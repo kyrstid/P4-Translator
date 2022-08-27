@@ -1,11 +1,5 @@
 
-# DeaneP4
-# Pogrammer: Kyrsti Deane
-# Email: Kdeane1@cnm.edu
-# Purpose: translate common phrases entered by user from English to Spanish
-
-
-# Definitely just copied & pasted this from your example
+# definitely just copied & pasted this from the example provided
 intro = 'Welcome to the English to Spanish Translator'
 text_width = len(intro)
 screen_width = 80
@@ -46,7 +40,7 @@ keys = ['1',
 '27',
 '28']
 
-en_phrase = ['Good morning.',
+english_phrase = ['Good morning.',
 'Good afternoon.',
 'Good evening. (greeting)',
 'Hello, my name is John.',
@@ -75,7 +69,7 @@ en_phrase = ['Good morning.',
 'Who?',
 'Why?',]
 
-sp_phrase = ['Buenos días.',
+spanish_phrase = ['Buenos días.',
 'Buenas tardes.',
 'Buenas noches.',
 'Hola, me llamo Juan.',
@@ -104,16 +98,15 @@ sp_phrase = ['Buenos días.',
 '¿Quièn?',
 '¿Por què?',]
 
-phrase_list = dict(zip(keys, en_phrase))
-phrase_list2 = dict(zip(keys, sp_phrase))
+phrase_list = dict(zip(keys, english_phrase))
+phrase_list2 = dict(zip(keys, spanish_phrase))
 
 print(phrase_list)
 print('  ')
 
 print('Hello!  This program translates common English phrases into Spanish.')
 print('Please review the list of English phrases above then,')
-
-      
+    
 # have user choose a # from a numbered list of provided English phrases
 
 number = input('Enter a number to see the translation of that phrase: ')
